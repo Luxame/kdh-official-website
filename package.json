@@ -19,5 +19,10 @@
     "sprintf-js": "^1.0.3",
     "gulp": "^3.9.0",
     "gulp-image-resize": "^0.6.0"
+  },
+  "devDependencies": {
+    "concurrent-transform": "^1.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-size": "^2.0.0"
   }
 }
