@@ -7,4 +7,4 @@ web:
     - "18080:18080"
   environment:
     PORT: "18080"
-  command: "/bin/bash -c 'npm install && npm run start'"
+  command: "/bin/bash -c 'npm install && gulp && npm run start'"
