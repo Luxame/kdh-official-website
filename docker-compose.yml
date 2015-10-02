@@ -4,7 +4,7 @@ web:
     - .:/app
   working_dir: /app
   ports:
-    - "18080:18080"
+    - "9001:3000"
   environment:
-    PORT: "18080"
-  command: "/bin/bash -c 'npm install && gulp && npm run start'"
+    PORT: "3000"
+  command: "/bin/bash -c 'npm install && npm start'"
