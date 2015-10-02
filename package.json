@@ -22,7 +22,10 @@
   },
   "devDependencies": {
     "concurrent-transform": "^1.0.0",
+    "gulp-foreach": "^0.1.0",
+    "gulp-imagemin": "^2.3.0",
     "gulp-notify": "^2.2.0",
-    "gulp-size": "^2.0.0"
+    "gulp-size": "^2.0.0",
+    "imagemin-pngquant": "^4.2.0"
   }
 }
