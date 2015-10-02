@@ -1,2 +1,4 @@
 .*
 config/mail.js
+node_modules
+*.log

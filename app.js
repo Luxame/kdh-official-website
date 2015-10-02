@@ -23,7 +23,12 @@ app.set('view engine', 'jade');
 app.use(logger('dev'));
 
 app.use(cookieParser('keyboard cat'));
-app.use(session({ cookie: { maxAge: 60000 }}));
+app.use(session({
+  cookie: { maxAge: 60000 },
+  resave: true,
+  saveUninitialized: true,
+  secret: 'keyboard cat'
+}));
 app.use(flash());
 
 app.use(bodyParser.json());
