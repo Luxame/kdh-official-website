@@ -8,6 +8,7 @@ gulp.task('default', function () {
       height : 1600,
       upscale : false,
       quality: 0.6,
+      imageMagick: true
     }))
     .pipe(gulp.dest('./public/images'));
 });
