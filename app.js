@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var sailsMailer = require('sails-service-mailer');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -34,18 +35,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-var sailsMailer = require('sails-service-mailer');
-var config = require('./config/mail');
-console.log('=== config ===', config);
+var mailConfig = require('./config/mail');
+console.log('=== mail config ===', mailConfig);
 
-global.server = {};
+global.server = {
+  mailer: sailsMailer.create(mailConfig.mail.type, mailConfig.mail.config)
+};
 
-global.server.mailer = sailsMailer.create(config.mail.type, config.mail.config);
-
-
-
-app.use('/', routes);
-app.use('/users', users);
+//app.use('/', routes);
+//app.use('/users', users);
 app.use('/contact', contact);
 
 // catch 404 and forward to error handler

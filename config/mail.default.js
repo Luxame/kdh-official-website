@@ -1,7 +1,7 @@
 module.exports.mail = {
   type: 'ses',
   config: {
-    from: 'contact@trunk-studio.com',
+    from: '',
     transporter: {
       accessKeyId: '',
       secretAccessKey: ''
