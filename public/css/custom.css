@@ -1,4 +1,4 @@
-/* 
+/*
     Document   : colors
     Author     : Little Neko
     Description: template colors
@@ -12,8 +12,8 @@
 #TYPOGRAPHY
 #LINKS AND BUTTONS
 #HEADER
-#MAIN MENU 
-#FOOTER 
+#MAIN MENU
+#FOOTER
 #SLIDERS
 #PORTFOLIO
 #MISCELANIOUS
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 	color:#222;
 }
 h2 {
- color:#888;	
+ color:#888;
 }
 h2 i {color:#999}
 h2.subTitle:after, h1.noSubtitle:after{
@@ -62,8 +62,10 @@ h2.subTitle:after, h1.noSubtitle:after{
 	color:#fff;
 }
 #home, #paralaxSlice1, #paralaxSlice2, #paralaxSlice3, #paralaxSlice4 {
-	background-color:#7DC24F;
+	/*background-color:#7DC24F;*/
+	background-color: #fff;
 }
+/*
 #home {
 	background-image:url('../images/theme-pics/paralax-sea-green-3.jpg');
 }
@@ -79,6 +81,7 @@ h2.subTitle:after, h1.noSubtitle:after{
 #paralaxSlice4 {
 	background-image: url('../images/theme-pics/paralax-4.jpg');
 }
+*/
 .paralaxText blockquote, .paralaxText h1, .paralaxText h2, .paralaxText h3, .paralaxText p, .paralaxText i{
 	color:#fff;
 }
@@ -147,7 +150,7 @@ ul.iconsList li a:hover, ul.iconsList i {
 /* END LINKS AND BUTTONS
 ================================================== */
 
-/* MAIN MENU 
+/* MAIN MENU
 ================================================== */
 
 #mainHeader{
@@ -169,10 +172,10 @@ ul.iconsList li a:hover, ul.iconsList i {
 	color:#fff;
 }
 
-/* END MAIN MENU 
+/* END MAIN MENU
 ================================================== */
 
-/* FOOTER 
+/* FOOTER
 ================================================== */
 
 footer {
@@ -192,7 +195,7 @@ p.credits a {
 	color:#7DC24F;
 }
 
-/* END FOOTER 
+/* END FOOTER
 ================================================== */
 
 /* HOME
@@ -354,7 +357,7 @@ border:none}
 
 /*** Feature box **/
 
-.boxFeature i{color:#7DC24F;} 
+.boxFeature i{color:#7DC24F;}
 
 /*** slices ***/
 .slice{
