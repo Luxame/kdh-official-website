@@ -41,11 +41,17 @@
     padding-top: 7px;
   }
 
-
+  .navbar-default .navbar-toggle {
+    margin-top: 10px;
+  }
 
   .navbar-brand {
     padding:0;
-    height: 80px;
+    height: 50px;
+  }
+
+  #KDH_logo_a img {
+    height: 30px;
   }
 
   .container-fluid .row .col-first {
@@ -108,23 +114,26 @@
   .services-msg {
     padding-left: 15px;
     padding-right: 15px;
-    font-size: 120%;
+    font-size: 14px;
     line-height: 150%;
     margin-bottom: 15px;
   }
 
   #features {
+    background-color: #eeeeee;
     /*background-image: url('../images/5_features/features.png');
     background-size: 100% auto;*/
     /*padding: 3% 0 55%;*/
-    background-repeat-y: no-repeat;
+    /*background-repeat-y: no-repeat;*/
+    padding-bottom: 20px;
   }
+
   .features-title {
     padding: 6px 35px;
   }
 
   #services, #features, #partner, #organisation, #contact {
-    padding-top: 100px;
+    padding-top: 60px;
   }
 
   #partner {
@@ -176,6 +185,10 @@
     /*height: 180px;*/
   }
 
+  #team_chart, #organisation .imgs img {
+    max-width: 70%;
+  }
+
   .workers img {
     max-width: 160px;
   }
@@ -185,6 +198,7 @@
     margin-top: 20px;
     margin-bottom: 10px;
   }
+
   .team-yellow::before {
     content: "";
     position: absolute;
@@ -248,6 +262,10 @@
   .navbar-brand {
     padding:0;
     height: 60px;
+  }
+
+  #KDH_logo_a img {
+    height: 58px;
   }
 
   .navbar-nav > li > a {
@@ -657,7 +675,7 @@ footer {
 .event-container {
   padding: 20px;
   background-image: url('../images/white60.png');
-  text-align: justify;
+  /*text-align: justify;*/
   text-shadow: 0 0 2px #fff;
 }
 .event-container h3 {
@@ -666,7 +684,7 @@ footer {
   font-weight: 900;
 }
 .event-container p {
-  font-weight: 500;
+  font-weight: 300;
 }
 
 
@@ -731,6 +749,8 @@ section img {
   -o-background-size: cover;
   background-size: cover;
 
+  /* -webkit-backface-visibility: hidden; */
+
   border-top: 2px solid #FFF;
   padding-top: 15%;
   padding-bottom: 30%;
@@ -758,7 +778,7 @@ section img {
 
 #services {
   background-color: #fafafa;
-  padding-bottom: 6%;
+  /*padding-bottom: 6%;*/
   color: #FFF;
 }
 .services-row {
@@ -846,11 +866,7 @@ section img {
   float: left;
 }
 
-#KDH_logo_a img {
-  height: 58px;
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (min-width: 768px) {
   #KDH_logo_a img {
     display: none;
   }
@@ -873,9 +889,37 @@ html, body {
 */
 
 #partner {
-  padding-bottom: 20%;
+  padding-bottom: 12%;
 }
 
 .slice {
   padding: 0;
+}
+
+#event.ios {
+  /*background-repeat: repeat-y;*/
+  background-attachment: scroll;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100%  100%;
+  -o-background-size: 100%  100%;
+  background-size: 100%  100%;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+#about.ios {
+  background-attachment: scroll;
+  -webkit-background-size: 1280px 800px;
+  -moz-background-size: 1280px 800px;
+  -o-background-size: 1280px 800px;
+  background-size: 1280px 800px;
+}
+
+#organisation.ios {
+  background-position: top center;
+  background-attachment: scroll;
+  -webkit-background-size: 1280px 800px;
+  -moz-background-size: 1280px 800px;
+  -o-background-size: 1280px 800px;
+  background-size: 1280px 800px;
 }

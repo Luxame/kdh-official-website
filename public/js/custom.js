@@ -885,7 +885,6 @@ $('.iconBoxV3 a').hover(function() {
 
 if($('.scrollMenu').length){
 
-
         if($('.localscroll').length){
             $('.localscroll').localScroll({
                 lazy: true,
