@@ -2,9 +2,16 @@
   "name": "kdh-official-website",
   "version": "1.0.0",
   "private": true,
+  "config" : { "port" : "9001" },
   "scripts": {
     "start": "node ./bin/www",
-    "start-prod": "pm2 start ./bin/www"
+    "server-start": "pm2 start ./bin/www --name 'kdh-official-website'",
+    "server-restart": "pm2 restart kdh-official-website",
+    "server-stop": "pm2 stop kdh-official-website",
+	"deploy": "rsync -az --exclude .git --progress ./ deploy@trunk-studio.com:/home/deploy/kdh-official-website",
+	"remote-start": "ssh deploy@trunk-studio.com 'cd kdh-official-website; npm run server-start'",
+	"remote-stop": "ssh deploy@trunk-studio.com 'cd kdh-official-website; npm run server-stop'",
+	"remote-restart": "ssh deploy@trunk-studio.com 'cd kdh-official-website; npm run server-restart'"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -27,6 +34,7 @@
     "gulp-imagemin": "^2.3.0",
     "gulp-notify": "^2.2.0",
     "gulp-size": "^2.0.0",
-    "imagemin-pngquant": "^4.2.0"
+    "imagemin-pngquant": "^4.2.0",
+    "pm2": "^0.15.7"
   }
 }
